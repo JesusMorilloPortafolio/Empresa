@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Triozon</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">
+                <img src="img/logopng-1.png" alt="Logo de Triozon">
+            </a>
+
+            <label for="menu">
+
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#servicios">SERVICIOS</a></li>
+                    <li><a href="#productos">PRODUCTOS</a></li>
+                    <li><a href="#contactanos">CONTACTANOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="inicio"
+        style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; color: white; background: url('img/fondo.jpg'); background-size: cover;">
+        <div id="carrusel" style="background: rgba(0, 0, 0, 0.5);">
+            <img id="imagenCarrusel" src="img/p1.jpg" alt="Imagen del carrusel"
+                style="border: 2px solid rgb(255, 255, 255); width: 1200px; height: 450px; object-fit: cover;">
+        </div>
+        <script>
+            var imagenes = ['img/p1.jpg', 'img/p2.jpg', 'img/p3.jpg'];
+            var indiceImagen = 0;
+
+            function cambiarImagen() {
+                indiceImagen++;
+                if (indiceImagen >= imagenes.length) {
+                    indiceImagen = 0;
+                }
+                document.getElementById('imagenCarrusel').src = imagenes[indiceImagen];
+            }
+
+            setInterval(cambiarImagen, 5000); // Cambia la imagen cada 3 segundos
+        </script>
+    </section>
+
+
+
+
+    <style>
+        .contenido-seccion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0; /* Agrega un margen vertical de 20px */
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Agrega un espacio de 20px entre las imágenes */
+        }
+
+        .proyecto {
+            margin: 10px; /* Agrega un margen de 10px alrededor de cada proyecto */
+        }
+
+        h2, p {
+            margin-bottom: 20px; /* Agrega un margen inferior de 20px a los títulos y párrafos */
+        }
+    </style>
+</head>
+<body>
+    <section id="servicios" class="portfolio2">
+        <div class="contenido-seccion">
+            <h2>¿Quienes somos?</h2>
+            <p>¡Hola! Bienvenidos a Triozon, una empresa especializada en filtros de agua y múltiples servicios
+                relacionados. Nos dedicamos a la reparación y mantenimiento de filtros de agua, y contamos con más de 20
+                años de experiencia en el campo. Nuestro compromiso es proporcionar soluciones de calidad para todas sus
+                necesidades de filtración de agua.</p>
+            <h2>Conocenos a fondo</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="" id="enlacegithub">
+                        <img src="img/agu.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>Salud a traves del agua</h3>
+                            <p></p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <a href="" id="enlacegithub">
+                        <img src="img/agu2.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Seguridad y compromiso</h3>
+                            <p></p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <a href="" id="enlacegithub">
+                        <img src="img/agu3.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Experiencia y trabajo</h3>
+                            <p></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="productos">
+        <div class="contenido-seccion">
+            <h2>Nuestros productos</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/pp1.png" alt="">
+                    <div class="overlay">
+                        <h3>Planta de ozono</h3>
+                        <p>Esto es una planta de ozono </p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/pp1.png" alt="">
+                    <div class="overlay">
+                        <h3>Planta de ozono</h3>
+                        <p>Esto es una planta de ozono </p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/pp1.png" alt="">
+                    <div class="overlay">
+                        <h3>Planta de ozono</h3>
+                        <p>Esto es una planta de ozono </p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/pp1.png" alt="">
+                    <div class="overlay">
+                        <h3>Planta de ozono</h3>
+                        <p>Esto es una planta de ozono </p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/pp1.png" alt="">
+                    <div class="overlay">
+                        <h3>Planta de ozono</h3>
+                        <p>Esto es una planta de ozono </p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/pp1.png" alt="">
+                    <div class="overlay">
+                        <h3>Planta de ozono</h3>
+                        <p>Esto es una planta de ozono </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contactanos" class="contactanos" style="text-align: center;">
+        <h2>Contactanos</h2>
+        <form style="font-size: 0.8em;">
+            <p><i class="fa-solid fa-location-dot"></i> Caracas, Venezuela</p>
+            <p><i class="fa-solid fa-mobile-screen"></i> Contacto: +58 0412-213-8280</p>
+            <p><i class="fa-solid fa-envelope"></i> Email: jesusmorillo507@gmail.com</p>
+        </form>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125541.57957589239!2d-66.92214400254235!3d10.48691729549837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a58adcd824807%3A0x93dd2eae0a998483!2sCaracas%2C%20Distrito%20Capital!5e0!3m2!1ses!2sve!4v1700712064805!5m2!1ses!2sve"
+            width="80%" height="450" style="border:0; display: block; margin: 0 auto;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+
+</body>
+
+
+
+</html>
